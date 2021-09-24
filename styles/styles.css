@@ -1,0 +1,125 @@
+html {
+    width: auto;
+}
+
+.headerStyle {
+    color: white;
+    background-color: #318BAD;
+    padding: 15px;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    background: aliceblue;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: blueviolet;
+    font: 32px Garamond, Helvetica, serif;
+    margin: auto;
+}
+
+table {
+    font: 30px Garamond, Helvetica, serif;
+    border:  1px dotted gray;
+    background: black;
+    color: white;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: red;
+}
+
+thead {
+    background-color: red;
+    text-align: left;
+    font: 25px Helvetica, serif;
+}
+
+.label-two {
+    display: block;
+}
+
+#submit-btn {
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.logo {
+    margin-right: 1em;
+}
+
+/* CREATING A GRID LAYOUT FOR THE PAGE ON DESKTOP*/
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'menus favorite'
+    'reviews contact';
+    gap: 1em;
+}
+
+.class1 {
+    grid-area: header;
+    display: flex;
+    align-content: center;
+    margin: auto;
+    border: 3px dashed blue;
+    padding: .2em;
+}
+
+.class2 {
+    grid-area: menus;
+    margin: auto;
+    border: 3px dashed blue;
+    padding: 2.5em;
+}
+
+.class3 {
+    grid-area: reviews;
+    margin: auto;
+    font: 20px Tahoma, Arial, sans-serif;
+    border: 3px dashed blue;
+    padding: 1.5em;
+}
+
+.class4 {
+    grid-area: contact;
+    margin: auto;
+    border: 3px dashed blue;
+    padding: 5em;
+    margin-bottom: 5em;
+}
+
+.class5 {
+    grid-area: favorite;
+    margin: auto;
+    border: 3px dashed blue;
+    padding: 4.5em;
+}
+
+/* RESPONSIVENESS FOR MOBILE */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        'header'
+        'reviews'
+        'menus'
+        'favorite'
+        'contact';
+        gap: 1em;
+    }
+}
+
+
+
+

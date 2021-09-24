@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Practice: CSS Corner Cafe</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+    <header class="class1">
+        <img src="images/logo.png" alt="logo" width="100px" class="logo">
+        <h1 class="headerStyle">Corner Cafe</h1>
+    </header>
+    <section class="class2">
+        <h2>Menu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coffee</td>
+                    <td>$2</td>
+                </tr>
+                <tr>
+                    <td>Tea</td>
+                    <td>$1.50</td>
+                </tr>
+                <tr>
+                    <td>Chicken & Waffles</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>Blueberry Pancakes</td>
+                    <td>$6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="class5">
+        <h2>Favorite Item</h2>
+        <form action="something.php" method="POST" class="label-two">
+            <legend>What did you like the most?</legend>
+                <input type="checkbox" id="coffee" name="coffee" value="coffee"><label for="coffee">Cofee</label><br>
+                <input type="checkbox" id="tea" name="tea" value="tea"><label for="tea">Tea</label><br>
+                <input type="checkbox" id="chicken" name="chicken" value="chicken"><label for="chicken">Chicken & Waffles</label><br>
+                <input type="checkbox" id="blueberries" name="blueberries" value="blueberries"><label for="blueberries">Blueberries & Pancakes</label><br>
+        </form>
+    </section>
+    <section class="class3">
+        <h2>Submit Your Review</h2>
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" /><br><br>
+            <label for="rating">Your Rating:</label>
+            1 <input type="range" id="rating" name="rating" min="1" max="5" /> 5
+            <input type="submit" id="submit-btn" />
+        </form>
+    </section>
+    <section class="class4">
+        <h2>Contact</h2>
+        <p>Call us at: <a href="tel:+15555551212">1-555-555-1212</a></p>
+        <address>
+            CSS Corner Cafe<br />
+            101 W Main St<br />
+            Bellevue, WA 98004
+        </address>
+    </section>
+</div>
+</body>
+</html>
